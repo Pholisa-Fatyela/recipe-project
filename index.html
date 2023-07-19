@@ -2,43 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFG Team Project</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Zest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="apiStyle.css">
 </head>
 <body>
-    <nav>
-        <h1>Recipe App</h1>
-      </nav>
-      <div class="container">
-        <!-- Content here -->
-        <div class="left-column">
-            <h3>Add Recipe</h3>
-
-            <form>
-            <label for="recipe-name">Name:</label>
-            <input type="text" id="recipe-name" required>
-            <br />
-
-            <label for="recipe-ingredients">Ingredients:</label>
-            <textarea id="recipe-ingredients" rows="5" required></textarea>
-            <br />
-
-            <label for="recipe-method">Method:</label>
-            <textarea id="recipe-method" rows="5" required></textarea>
-            <br />
-
-            <button type="submit">Add Recipe</button>
-            </form>
-        </div>
-        <div class="right-column">
-            <div id="recipe-list"></div>
-            <div id="no-recipes">You have no recipes.</div>
+    <div id="wrapper">
+        <header>
+            <h1>Zest - Little Book of Food</h1>
+        </header>
+        <main class="blocks">
+            <div class="add-recipe block">
+                <a href="addRecipe.html">Add recipe</a>
+            </div>
+            
+            <div class="cookbook block">
+                <a href="recipes.html">View cookbook</a>
+            </div>
         
-        </div>
-      </div>
-      <script src="script.js"></script>
+            <div class="api block ">
+                <a href="apiSearch.html">Search API</a>
+            </div>
+            <div class="nutrition block">
+                <a href="nutrition.html">Nutrition analysis</a>
+            </div>
+        </main>
+        <footer>
+            &copy; 2023 Made with little sugar but lots of enthusiasm
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

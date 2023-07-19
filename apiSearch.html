@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zest-api search</title>
+    <link rel="stylesheet" href="style copy.css">
+</head>
+<body>
+    <header>
+        <h1>Little Book of Food</h1>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <h3>Search the API </h3>
+            <form>
+                <label for="recipeIngredient">Ingredient:</label>
+                <input type="text" id="recipeIngredient" required>
+                <br />
+
+                <label for="mealType">Meal:</label>
+                <select name="meals" id="mealType">
+                    <option value=""></option>
+                    <option value="Breakfast">breakfast</option>
+                    <option value="Lunch">lunch</option>
+                    <option value="Snack">snack</option>
+                    <option value="Dinner">dinner</option>
+                    <option value="Teatime">teatime</option>
+                </select>
+                <br />
+
+                <label for="dietType">Diet:</label>
+                <select name="diets" id="dietType">
+                    <option value=""></option>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-fiber">High-Fiber</option>
+                    <option value="high-protein">High-Protein</option>
+                    <option value="low-carb">Low-Carb</option>
+                    <option value="low-fat">Low-Fat</option>
+                    <option value="low-sodium">Low-Sodium</option>
+                </select>
+                <br />
+
+                <label for="restrictions">Restrictions:</label>
+                <select name="restricts" id="restrictions">
+                    <option value=""></option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="dairy-free">Dairy-Free</option>
+                    <option value="paleo">Paleo</option>
+                    <option value="keto-friendly">Keto</option>
+                    <option value="peanut-free">Peanut-Free</option>
+                </select>
+                <br />
+
+                <label for="cuisine">Cuisine:</label>
+                <select name="cuisine" id="cuisine">
+                    <option value=""></option>
+                    <option value="American">American</option>
+                    <option value="Asian">Asian</option>
+                    <option value="British">British</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Central Europe">Central Europe</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Eastern Europe">Eastern Europe</option>
+                    <option value="French">French</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Kosher">Kosher</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Middle Eastern">Middle Eastern</option>
+                    <option value="Nordic">Nordic</option>
+                    <option value="South American">South American</option>
+                    <option value="South East Asian">South East Asian</option>
+                </select>
+                <br />
+
+                <button type="submit" id="apiBtn">Search API</button>
+            </form>
+        </div>
+        <div class="right-column">
+            <div id="recipe-list"></div>
+            <div id="no-recipes">You have no recipes.</div>
+        
+        </div>
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
